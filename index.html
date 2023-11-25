@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Ion icon cdn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <title>Countries App</title>
+  </head>
+  <body>
+    <header class="container header-container">
+      <h1><a href="./index.html">Where in the world?</a></h1>
+      <div class="header-theme-changer">
+        <ion-icon class="theme-changer-icon" name="moon-outline"></ion-icon>
+        <span>Dark mode</span>
+      </div>
+    </header>
+
+    <section class="container section-container">
+      <div class="searching-side">
+        <label for="country">
+          <ion-icon name="search-sharp"></ion-icon>
+          <input
+            type="text"
+            id="country"
+            placeholder="Search for a country…"
+            autocomplete="off"
+          />
+        </label>
+      </div>
+      <div class="filtering-side">
+        <div class="filter-selected">
+          <span>Filter by Region</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <div class="filter-options">
+          <!--active toggle-->
+          <div class="filter-option"><p>Africa</p></div>
+          <div class="filter-option"><p>America</p></div>
+          <div class="filter-option"><p>Asia</p></div>
+          <div class="filter-option"><p>Europe</p></div>
+          <div class="filter-option"><p>Oceania</p></div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container main-container">
+      <!-- <a href="./country-detail.html" class="country-card-container">
+        
+      </a> -->
+    </main>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/theme-changer.js"></script>
+  </body>
+</html>
